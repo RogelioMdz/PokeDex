@@ -1,0 +1,33 @@
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+
+/* Variables globales de estilos */
+:root{
+    --bg-border: rgb(57,95,157);
+    --text-yellow: rgb(252, 208, 65);
+}
+.titlePage{
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Pokemon Solid', sans-serif;
+    color: var(--text-yellow);
+    text-shadow: 4px 0 0 var(--bg-border), -4px 0 0 var(--bg-border), 0 4px 0 var(--bg-border), 0 -4px 0 var(--bg-border), 3px 3px var(--bg-border), -3px -3px 0 var(--bg-border), 3px -3px 0 var(--bg-border), -3px 3px 0 var(--bg-border);
+    margin-top: 0.4em;
+}
+
+/* adaptacion para dispositivos como el Galaxy Fold */
+@media (max-width: 280px) {
+    .titlePage{
+        font-size: 2em;
+    }
+}
+
+/*  */
+.count{
+    display: flex;
+    justify-content: center;
+}
+
+.divInformacion{
+    display: flex;
+    justify-content: center;
+}

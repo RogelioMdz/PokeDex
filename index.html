@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/style.css">
+    <link rel="stylesheet" href="./public/bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid fondo">
+        <h1 class="titlePage">
+            PokéDex
+        </h1>
+    </div>
+    <br>
+    <div class="container">
+        <div class="count m-4 ">
+            <h6 id="countdown"></h6>
+        </div>
+        <div class="divInformacion" id="pokemon">
+            <div class="card" style="width: 18rem;">
+                <img  id="imagenPokemon" src="" class="card-img-top" alt="...">
+                <div id="nombrePokemon" class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto m-5">
+            <button class="btn btn-primary" type="button" id="btnMostrar" >Mostrar Pokémon</button>
+        </div>
+    </div>
+    <script src="./public/jquery-3.6.0.js"></script>
+    <script src="./public/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./public/pokemon.js"></script>
+    <script src="./public/timer.js"></script>
+</body>
+
+</html>
