@@ -1,8 +1,12 @@
 var count = 30;
-setInterval( function() {
+
+const timer = () =>{
     let seconds = document.getElementById('countdown');
     count--
     if (count >= 0) {
-        seconds.innerHTML = count + " nuevo pokemon automatico";
+        seconds.innerHTML = `Obtendras un pokemon nuevo automaticamenet en ${count} segundos`;
     }
-}, 1000);
+}
+
+setTimeout(timer);
+setInterval(timer,1000);
