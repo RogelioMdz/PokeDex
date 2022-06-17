@@ -1,33 +1,72 @@
 @import url('http://fonts.cdnfonts.com/css/pokemon-solid');
 
-/* Variables globales de estilos */
+/* FONDO DE LA PAGINA */
+body{
+    background: url('./img/fondo.jpeg');
+}
+
+/* VARIABLES GLOBALES*/
 :root{
     --bg-border: rgb(57,95,157);
     --text-yellow: rgb(252, 208, 65);
 }
+/* TITULO SE OBTIENE DESDE INDEX */
 .titlePage{
     text-align: center;
     font-size: 4em;
     font-family: 'Pokemon Solid', sans-serif;
     color: var(--text-yellow);
     text-shadow: 4px 0 0 var(--bg-border), -4px 0 0 var(--bg-border), 0 4px 0 var(--bg-border), 0 -4px 0 var(--bg-border), 3px 3px var(--bg-border), -3px -3px 0 var(--bg-border), 3px -3px 0 var(--bg-border), -3px 3px 0 var(--bg-border);
-    margin-top: 0.4em;
+    margin-top: 0.7em;
 }
 
-/* adaptacion para dispositivos como el Galaxy Fold */
+/* SE OBTIENE DESDE INDEX */
+.card{
+    box-shadow: 1px 1px 3px 1px;
+}
+
+/* ADAPTACION A DISPOSITIVOS DEL TAMAÑO DE GALAXY FOD */
 @media (max-width: 280px) {
     .titlePage{
         font-size: 2em;
     }
+    .adicionalPokemon{
+        margin: 0.2em !important;
+    }
 }
 
-/*  */
-.count{
-    display: flex;
-    justify-content: center;
-}
-
+/* SE OBTIENE DESDE INDEX */
 .divInformacion{
     display: flex;
     justify-content: center;
 }
+
+/* SE OBTIENEN CLASES DESDE POKEMON.JS */
+.nombrePokemon {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 1em;
+    letter-spacing: 0.2em;
+}
+.informacionAdicional{
+    display: flex;
+    justify-content: space-around;
+}
+.adicionalPokemon {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8em;
+    margin: 1em 1em 1em 1em;
+}
+.line{
+    color: black;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.imgPokemon{
+    padding: 1em;
+}
+
+
